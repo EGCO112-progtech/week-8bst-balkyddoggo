@@ -121,14 +121,14 @@ void printTree(TreeNodePtr root, int space) {
    if (root == NULL) return;
 
    // Increase distance between levels
-   space += 5;
+   space += 3;
 
    // Process right child first
    printTree(root->rightPtr, space);
 
    // Print current node after spacing
    //printf("\n");
-   for (int i = 5; i < space; i++)
+   for (int i = 3; i < space; i++)
        printf(" ");
    printf("%3d\n", root->data);
 
